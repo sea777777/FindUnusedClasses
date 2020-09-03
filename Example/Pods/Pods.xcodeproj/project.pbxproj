@@ -1,0 +1,774 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07799D6B27AE83B726CF2738F82587B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		228635B29A04CD719FF067FBE5AF94ED /* Pods-FindUnusedClasses_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4493EC0670CF22F6A7B1447A9B7115E4 /* Pods-FindUnusedClasses_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		246D8F26B936A80F63A541DB2FEB0594 /* Pods-FindUnusedClasses_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F36E9DA132C032267453A2B229786D2 /* Pods-FindUnusedClasses_Example-dummy.m */; };
+		2ED0F367524254787919861E2B48A73B /* FindUnusedClasses-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D5A2A6DC451B73E5BC7B7DBC1B556DAE /* FindUnusedClasses-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D3643180E539935E4D07881432F2503 /* FindUnusedClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = 109F7D9F9C1CD5C86B8A8F2F4C79F243 /* FindUnusedClasses.m */; };
+		50408128DB6BE9D8CB289136BE661231 /* Pods-FindUnusedClasses_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B400E49B9BC6E9C67D92F0BF8F0F68 /* Pods-FindUnusedClasses_Tests-dummy.m */; };
+		9817990A5C4637B822F0FB64C82E369E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		98B203E6DD990EE42E76BE858BB1A045 /* Pods-FindUnusedClasses_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 677C686E959FB0B7D87EE2723CC38DB2 /* Pods-FindUnusedClasses_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9CF18B2AB67EEE97E6ADDC973A8E1ADF /* FindUnusedClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F88574AD4B3C05D0FF809B09014C056 /* FindUnusedClasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D437FAA7ECCB7F8E37554AC9CA7E9250 /* FindUnusedClasses-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 361A9904D34DD99F480D59B6897D6812 /* FindUnusedClasses-dummy.m */; };
+		D4A9098959F9459603C6F92B7557599C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FB79D4F5A3F8569C8031EFCBEB4BE1D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CEAED128AB4D28BD8C5A4EE852B52D99;
+			remoteInfo = "Pods-FindUnusedClasses_Example";
+		};
+		6B736AFA9814A9036EDD4201581C676B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D6179FB71E69C6006146FD5B5E46780;
+			remoteInfo = FindUnusedClasses;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0658BD907F5EA56264B127D45769DA60 /* Pods-FindUnusedClasses_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FindUnusedClasses_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		0F36E9DA132C032267453A2B229786D2 /* Pods-FindUnusedClasses_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FindUnusedClasses_Example-dummy.m"; sourceTree = "<group>"; };
+		109F7D9F9C1CD5C86B8A8F2F4C79F243 /* FindUnusedClasses.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FindUnusedClasses.m; path = FindUnusedClasses/Classes/FindUnusedClasses.m; sourceTree = "<group>"; };
+		1F88574AD4B3C05D0FF809B09014C056 /* FindUnusedClasses.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FindUnusedClasses.h; path = FindUnusedClasses/Classes/FindUnusedClasses.h; sourceTree = "<group>"; };
+		26FF41D6D77D6E30492D95B87DEB77A5 /* Pods_FindUnusedClasses_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FindUnusedClasses_Example.framework; path = "Pods-FindUnusedClasses_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		361A9904D34DD99F480D59B6897D6812 /* FindUnusedClasses-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FindUnusedClasses-dummy.m"; sourceTree = "<group>"; };
+		4493EC0670CF22F6A7B1447A9B7115E4 /* Pods-FindUnusedClasses_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FindUnusedClasses_Tests-umbrella.h"; sourceTree = "<group>"; };
+		4A94EE36BCF320D9654923B14C010C27 /* Pods_FindUnusedClasses_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FindUnusedClasses_Tests.framework; path = "Pods-FindUnusedClasses_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FEA29B36A0B7F242377AF66A41D353D /* FindUnusedClasses.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FindUnusedClasses.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		52F7AFFAB52213D899132C5A99490508 /* Pods-FindUnusedClasses_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FindUnusedClasses_Example.modulemap"; sourceTree = "<group>"; };
+		656D1A4BE6F8696A6C51F98504252C6D /* Pods-FindUnusedClasses_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FindUnusedClasses_Example-frameworks.sh"; sourceTree = "<group>"; };
+		677C686E959FB0B7D87EE2723CC38DB2 /* Pods-FindUnusedClasses_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FindUnusedClasses_Example-umbrella.h"; sourceTree = "<group>"; };
+		67B400E49B9BC6E9C67D92F0BF8F0F68 /* Pods-FindUnusedClasses_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FindUnusedClasses_Tests-dummy.m"; sourceTree = "<group>"; };
+		70CD81DA36C3C60D745656ABA5BA3004 /* FindUnusedClasses.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FindUnusedClasses.modulemap; sourceTree = "<group>"; };
+		751E91C087E00BF6260D3C7837E15590 /* Pods-FindUnusedClasses_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FindUnusedClasses_Tests-Info.plist"; sourceTree = "<group>"; };
+		7EC14D7C21449FE396C64ACC7E586578 /* Pods-FindUnusedClasses_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FindUnusedClasses_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D5BB87D13C8E082F80A64FE956B632D /* FindUnusedClasses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FindUnusedClasses.framework; path = FindUnusedClasses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		97892B8625ED219D99A36C9BB6D2210C /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B1167D40EF89A9EE679C5DE1E66515CC /* FindUnusedClasses.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FindUnusedClasses.xcconfig; sourceTree = "<group>"; };
+		B2FBE251170E8BEAF795BBB33DAEC894 /* Pods-FindUnusedClasses_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FindUnusedClasses_Tests.modulemap"; sourceTree = "<group>"; };
+		B9CD03E93F849919BD66D291EE8267DE /* Pods-FindUnusedClasses_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FindUnusedClasses_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		BA81B93908FC2871B484B31A3611A19B /* Pods-FindUnusedClasses_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FindUnusedClasses_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BBA2D75C064AEA2FAC5B8760BD4F6FD5 /* Pods-FindUnusedClasses_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FindUnusedClasses_Example-Info.plist"; sourceTree = "<group>"; };
+		BF45ADD01595A4B0D9FEAA709FD7ACC4 /* Pods-FindUnusedClasses_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FindUnusedClasses_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		C9CF256ACFABA89D7A9DA6EE316FBDD3 /* FindUnusedClasses-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FindUnusedClasses-Info.plist"; sourceTree = "<group>"; };
+		C9F6DF9C55B94507779D7504805BD319 /* Pods-FindUnusedClasses_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FindUnusedClasses_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D409726F6D6EAB07F1B9BD326126F78A /* Pods-FindUnusedClasses_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FindUnusedClasses_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D5A2A6DC451B73E5BC7B7DBC1B556DAE /* FindUnusedClasses-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FindUnusedClasses-umbrella.h"; sourceTree = "<group>"; };
+		E2A06E7889AE2E9A94FF83E0CF700B04 /* FindUnusedClasses-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FindUnusedClasses-prefix.pch"; sourceTree = "<group>"; };
+		E43B5ED4896385F31BB3A4F4460E2790 /* Pods-FindUnusedClasses_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FindUnusedClasses_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F94651CD23F8E2FBDE4C2057570C3283 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2B0C82B397E592EC10D5DF5F248665C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A9098959F9459603C6F92B7557599C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60829B7A159024A41251E2A42E05E04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9817990A5C4637B822F0FB64C82E369E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F689D2E6D0B89AB57A3278671F000CAE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07799D6B27AE83B726CF2738F82587B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		161E74D2414E29A8DA9306246C2690F2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				70CD81DA36C3C60D745656ABA5BA3004 /* FindUnusedClasses.modulemap */,
+				B1167D40EF89A9EE679C5DE1E66515CC /* FindUnusedClasses.xcconfig */,
+				361A9904D34DD99F480D59B6897D6812 /* FindUnusedClasses-dummy.m */,
+				C9CF256ACFABA89D7A9DA6EE316FBDD3 /* FindUnusedClasses-Info.plist */,
+				E2A06E7889AE2E9A94FF83E0CF700B04 /* FindUnusedClasses-prefix.pch */,
+				D5A2A6DC451B73E5BC7B7DBC1B556DAE /* FindUnusedClasses-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FindUnusedClasses";
+			sourceTree = "<group>";
+		};
+		1B19BC4C3A176DA159F0A435E9819F0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D5BB87D13C8E082F80A64FE956B632D /* FindUnusedClasses.framework */,
+				26FF41D6D77D6E30492D95B87DEB77A5 /* Pods_FindUnusedClasses_Example.framework */,
+				4A94EE36BCF320D9654923B14C010C27 /* Pods_FindUnusedClasses_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2CF9F2474ED620CD73F3FFC31F2BD784 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				32567B8EADDABF2C018A653D98B5A1B9 /* FindUnusedClasses */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		319FA647C565445764F7B26429BD3E72 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D2EF4751D8E7A0F30C4560D296B9A825 /* Pods-FindUnusedClasses_Example */,
+				B6C22870CDD28D21C3882950E6CA6D3D /* Pods-FindUnusedClasses_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		32567B8EADDABF2C018A653D98B5A1B9 /* FindUnusedClasses */ = {
+			isa = PBXGroup;
+			children = (
+				1F88574AD4B3C05D0FF809B09014C056 /* FindUnusedClasses.h */,
+				109F7D9F9C1CD5C86B8A8F2F4C79F243 /* FindUnusedClasses.m */,
+				FF253047575A062186113A9246E3DEC8 /* Pod */,
+				161E74D2414E29A8DA9306246C2690F2 /* Support Files */,
+			);
+			name = FindUnusedClasses;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		B6C22870CDD28D21C3882950E6CA6D3D /* Pods-FindUnusedClasses_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				B2FBE251170E8BEAF795BBB33DAEC894 /* Pods-FindUnusedClasses_Tests.modulemap */,
+				C9F6DF9C55B94507779D7504805BD319 /* Pods-FindUnusedClasses_Tests-acknowledgements.markdown */,
+				BA81B93908FC2871B484B31A3611A19B /* Pods-FindUnusedClasses_Tests-acknowledgements.plist */,
+				67B400E49B9BC6E9C67D92F0BF8F0F68 /* Pods-FindUnusedClasses_Tests-dummy.m */,
+				751E91C087E00BF6260D3C7837E15590 /* Pods-FindUnusedClasses_Tests-Info.plist */,
+				4493EC0670CF22F6A7B1447A9B7115E4 /* Pods-FindUnusedClasses_Tests-umbrella.h */,
+				7EC14D7C21449FE396C64ACC7E586578 /* Pods-FindUnusedClasses_Tests.debug.xcconfig */,
+				B9CD03E93F849919BD66D291EE8267DE /* Pods-FindUnusedClasses_Tests.release.xcconfig */,
+			);
+			name = "Pods-FindUnusedClasses_Tests";
+			path = "Target Support Files/Pods-FindUnusedClasses_Tests";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				2CF9F2474ED620CD73F3FFC31F2BD784 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				1B19BC4C3A176DA159F0A435E9819F0B /* Products */,
+				319FA647C565445764F7B26429BD3E72 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2EF4751D8E7A0F30C4560D296B9A825 /* Pods-FindUnusedClasses_Example */ = {
+			isa = PBXGroup;
+			children = (
+				52F7AFFAB52213D899132C5A99490508 /* Pods-FindUnusedClasses_Example.modulemap */,
+				E43B5ED4896385F31BB3A4F4460E2790 /* Pods-FindUnusedClasses_Example-acknowledgements.markdown */,
+				BF45ADD01595A4B0D9FEAA709FD7ACC4 /* Pods-FindUnusedClasses_Example-acknowledgements.plist */,
+				0F36E9DA132C032267453A2B229786D2 /* Pods-FindUnusedClasses_Example-dummy.m */,
+				656D1A4BE6F8696A6C51F98504252C6D /* Pods-FindUnusedClasses_Example-frameworks.sh */,
+				BBA2D75C064AEA2FAC5B8760BD4F6FD5 /* Pods-FindUnusedClasses_Example-Info.plist */,
+				677C686E959FB0B7D87EE2723CC38DB2 /* Pods-FindUnusedClasses_Example-umbrella.h */,
+				0658BD907F5EA56264B127D45769DA60 /* Pods-FindUnusedClasses_Example.debug.xcconfig */,
+				D409726F6D6EAB07F1B9BD326126F78A /* Pods-FindUnusedClasses_Example.release.xcconfig */,
+			);
+			name = "Pods-FindUnusedClasses_Example";
+			path = "Target Support Files/Pods-FindUnusedClasses_Example";
+			sourceTree = "<group>";
+		};
+		FF253047575A062186113A9246E3DEC8 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4FEA29B36A0B7F242377AF66A41D353D /* FindUnusedClasses.podspec */,
+				97892B8625ED219D99A36C9BB6D2210C /* LICENSE */,
+				F94651CD23F8E2FBDE4C2057570C3283 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1BD4FB748E72D19D7973E4F22CE76AFA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B203E6DD990EE42E76BE858BB1A045 /* Pods-FindUnusedClasses_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		560875985395B4E172DFB25F5E1C4F00 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ED0F367524254787919861E2B48A73B /* FindUnusedClasses-umbrella.h in Headers */,
+				9CF18B2AB67EEE97E6ADDC973A8E1ADF /* FindUnusedClasses.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85E07DB28F63C71BDCD3753E5FC30B89 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				228635B29A04CD719FF067FBE5AF94ED /* Pods-FindUnusedClasses_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D6179FB71E69C6006146FD5B5E46780 /* FindUnusedClasses */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E28EA258E41AAD9FAB0DB03D8B1A7A6 /* Build configuration list for PBXNativeTarget "FindUnusedClasses" */;
+			buildPhases = (
+				560875985395B4E172DFB25F5E1C4F00 /* Headers */,
+				B847F9A96DA7986E41211C12CAF29653 /* Sources */,
+				C2B0C82B397E592EC10D5DF5F248665C /* Frameworks */,
+				30619DCF6B696FEE9E5FBDB71D20310B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FindUnusedClasses;
+			productName = FindUnusedClasses;
+			productReference = 8D5BB87D13C8E082F80A64FE956B632D /* FindUnusedClasses.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CEAED128AB4D28BD8C5A4EE852B52D99 /* Pods-FindUnusedClasses_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA98BB125A883FB8955DA8DEBBC30852 /* Build configuration list for PBXNativeTarget "Pods-FindUnusedClasses_Example" */;
+			buildPhases = (
+				1BD4FB748E72D19D7973E4F22CE76AFA /* Headers */,
+				EAFECF841D5E75B704818B9A0E4A46D3 /* Sources */,
+				F689D2E6D0B89AB57A3278671F000CAE /* Frameworks */,
+				2CE238C095169470658B9ED620580BC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52AC349F7C205ED41CAEFFF71D584123 /* PBXTargetDependency */,
+			);
+			name = "Pods-FindUnusedClasses_Example";
+			productName = "Pods-FindUnusedClasses_Example";
+			productReference = 26FF41D6D77D6E30492D95B87DEB77A5 /* Pods_FindUnusedClasses_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D21FB16E31686CBFC0DE38D43C125AB0 /* Pods-FindUnusedClasses_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 844D2CDFA091031C9F0117FAB911EE41 /* Build configuration list for PBXNativeTarget "Pods-FindUnusedClasses_Tests" */;
+			buildPhases = (
+				85E07DB28F63C71BDCD3753E5FC30B89 /* Headers */,
+				B831D685D2A774A5C40A05695E9760D6 /* Sources */,
+				D60829B7A159024A41251E2A42E05E04 /* Frameworks */,
+				58B8D9510DE6BB2DD107036254E6174C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF35EB171FA1904C1E43FA9C676E052B /* PBXTargetDependency */,
+			);
+			name = "Pods-FindUnusedClasses_Tests";
+			productName = "Pods-FindUnusedClasses_Tests";
+			productReference = 4A94EE36BCF320D9654923B14C010C27 /* Pods_FindUnusedClasses_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 1B19BC4C3A176DA159F0A435E9819F0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D6179FB71E69C6006146FD5B5E46780 /* FindUnusedClasses */,
+				CEAED128AB4D28BD8C5A4EE852B52D99 /* Pods-FindUnusedClasses_Example */,
+				D21FB16E31686CBFC0DE38D43C125AB0 /* Pods-FindUnusedClasses_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CE238C095169470658B9ED620580BC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30619DCF6B696FEE9E5FBDB71D20310B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58B8D9510DE6BB2DD107036254E6174C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B831D685D2A774A5C40A05695E9760D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50408128DB6BE9D8CB289136BE661231 /* Pods-FindUnusedClasses_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B847F9A96DA7986E41211C12CAF29653 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D437FAA7ECCB7F8E37554AC9CA7E9250 /* FindUnusedClasses-dummy.m in Sources */,
+				3D3643180E539935E4D07881432F2503 /* FindUnusedClasses.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EAFECF841D5E75B704818B9A0E4A46D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				246D8F26B936A80F63A541DB2FEB0594 /* Pods-FindUnusedClasses_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52AC349F7C205ED41CAEFFF71D584123 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FindUnusedClasses;
+			target = 8D6179FB71E69C6006146FD5B5E46780 /* FindUnusedClasses */;
+			targetProxy = 6B736AFA9814A9036EDD4201581C676B /* PBXContainerItemProxy */;
+		};
+		FF35EB171FA1904C1E43FA9C676E052B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-FindUnusedClasses_Example";
+			target = CEAED128AB4D28BD8C5A4EE852B52D99 /* Pods-FindUnusedClasses_Example */;
+			targetProxy = 5FB79D4F5A3F8569C8031EFCBEB4BE1D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6D09630BB2570D39AC28A49566EDEDD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EC14D7C21449FE396C64ACC7E586578 /* Pods-FindUnusedClasses_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FindUnusedClasses_Tests/Pods-FindUnusedClasses_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FindUnusedClasses_Tests/Pods-FindUnusedClasses_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7E474B299CD2100AF564311302077405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0658BD907F5EA56264B127D45769DA60 /* Pods-FindUnusedClasses_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FindUnusedClasses_Example/Pods-FindUnusedClasses_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FindUnusedClasses_Example/Pods-FindUnusedClasses_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		91E0AF8CF1130A81A9D5D84F787D512A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1167D40EF89A9EE679C5DE1E66515CC /* FindUnusedClasses.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FindUnusedClasses/FindUnusedClasses-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FindUnusedClasses/FindUnusedClasses-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FindUnusedClasses/FindUnusedClasses.modulemap";
+				PRODUCT_MODULE_NAME = FindUnusedClasses;
+				PRODUCT_NAME = FindUnusedClasses;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		97815C67F4D355DEAB270395D76B266F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D409726F6D6EAB07F1B9BD326126F78A /* Pods-FindUnusedClasses_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FindUnusedClasses_Example/Pods-FindUnusedClasses_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FindUnusedClasses_Example/Pods-FindUnusedClasses_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A84544CC61DFD1E2C868CC8C9DE1930F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B9CD03E93F849919BD66D291EE8267DE /* Pods-FindUnusedClasses_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FindUnusedClasses_Tests/Pods-FindUnusedClasses_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FindUnusedClasses_Tests/Pods-FindUnusedClasses_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CD668E250903A6FCE18373D760F3C076 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1167D40EF89A9EE679C5DE1E66515CC /* FindUnusedClasses.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FindUnusedClasses/FindUnusedClasses-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FindUnusedClasses/FindUnusedClasses-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FindUnusedClasses/FindUnusedClasses.modulemap";
+				PRODUCT_MODULE_NAME = FindUnusedClasses;
+				PRODUCT_NAME = FindUnusedClasses;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E28EA258E41AAD9FAB0DB03D8B1A7A6 /* Build configuration list for PBXNativeTarget "FindUnusedClasses" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91E0AF8CF1130A81A9D5D84F787D512A /* Debug */,
+				CD668E250903A6FCE18373D760F3C076 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		844D2CDFA091031C9F0117FAB911EE41 /* Build configuration list for PBXNativeTarget "Pods-FindUnusedClasses_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D09630BB2570D39AC28A49566EDEDD8 /* Debug */,
+				A84544CC61DFD1E2C868CC8C9DE1930F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA98BB125A883FB8955DA8DEBBC30852 /* Build configuration list for PBXNativeTarget "Pods-FindUnusedClasses_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E474B299CD2100AF564311302077405 /* Debug */,
+				97815C67F4D355DEAB270395D76B266F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

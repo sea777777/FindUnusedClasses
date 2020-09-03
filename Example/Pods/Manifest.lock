@@ -1,0 +1,16 @@
+PODS:
+  - FindUnusedClasses (0.1.0)
+
+DEPENDENCIES:
+  - FindUnusedClasses (from `../`)
+
+EXTERNAL SOURCES:
+  FindUnusedClasses:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FindUnusedClasses: 03225e3f5e0012a470743151bbf21424e6971f01
+
+PODFILE CHECKSUM: edd74059b41a527f35e74201968bfcc6386ca873
+
+COCOAPODS: 1.6.1

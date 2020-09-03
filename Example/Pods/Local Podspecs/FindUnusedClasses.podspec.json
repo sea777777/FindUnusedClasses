@@ -1,0 +1,22 @@
+{
+  "name": "FindUnusedClasses",
+  "version": "0.1.0",
+  "summary": "A short description of FindUnusedClasses.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sea777777/FindUnusedClasses",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sea777777": "liuyanchao1@xiaomi.com"
+  },
+  "source": {
+    "git": "https://github.com/sea777777/FindUnusedClasses.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "FindUnusedClasses/Classes/**/*"
+}

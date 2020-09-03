@@ -1,0 +1,6 @@
+framework module FindUnusedClasses {
+  umbrella header "FindUnusedClasses-umbrella.h"
+
+  export *
+  module * { export * }
+}
