@@ -23,7 +23,7 @@ pod 'FindUnusedClasses'
 
 ## Author
 
-sea777777, liuyanchao1@xiaomi.com
+sea777777, lyc1234560720@126.com
 
 ## License
 
