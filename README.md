@@ -1,4 +1,4 @@
-# FindUnusedClasses
+# FindUnusedClasses 查找ios项目无用类工具
 
 
 [![CI Status](https://img.shields.io/travis/sea777777/FindUnusedClasses.svg?style=flat)](https://travis-ci.org/sea777777/FindUnusedClasses)
