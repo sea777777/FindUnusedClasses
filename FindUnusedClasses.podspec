@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/sea777777/FindUnusedClasses'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'sea777777' => 'liuyanchao1@xiaomi.com' }
+  s.author           = { 'sea777777' => 'lyc1234560720@126.com' }
   s.source           = { :git => 'https://github.com/sea777777/FindUnusedClasses.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
