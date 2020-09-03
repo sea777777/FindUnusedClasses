@@ -61,10 +61,10 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7372971C95EE11BE388776AA /* Pods-FindUnusedClasses_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindUnusedClasses_Tests.release.xcconfig"; path = "Target Support Files/Pods-FindUnusedClasses_Tests/Pods-FindUnusedClasses_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		962523A942B71F234A28BEF6 /* FindUnusedClasses.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FindUnusedClasses.podspec; path = ../FindUnusedClasses.podspec; sourceTree = "<group>"; };
-		9EDF2755E427D40123CBA65B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		962523A942B71F234A28BEF6 /* FindUnusedClasses.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FindUnusedClasses.podspec; path = ../FindUnusedClasses.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EDF2755E427D40123CBA65B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A5D6566713CF56FC9FBBC835 /* Pods_FindUnusedClasses_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindUnusedClasses_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B214BEE1D370920FAF43A596 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B214BEE1D370920FAF43A596 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CE1F447F26D82AD2F210342D /* Pods_FindUnusedClasses_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindUnusedClasses_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D78A7C65D19B6E0EE3AC84BF /* Pods-FindUnusedClasses_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindUnusedClasses_Example.debug.xcconfig"; path = "Target Support Files/Pods-FindUnusedClasses_Example/Pods-FindUnusedClasses_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -193,7 +193,6 @@
 				341AD48D389933B9D5AE71E0 /* Pods-FindUnusedClasses_Tests.debug.xcconfig */,
 				7372971C95EE11BE388776AA /* Pods-FindUnusedClasses_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
