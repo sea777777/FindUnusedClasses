@@ -7,6 +7,8 @@
 //
 
 #import "YCViewController.h"
+#import <FindUnusedClasses/FindUnusedClasses.h>
+#import "YCUnused2.h"
 
 @interface YCViewController ()
 
@@ -18,6 +20,17 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    
+    
+    [[YCUnused2 new] doSomething];
+    
+    [FindUnusedClasses allUnusedClasses:[self class]];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35859B832500B7EF008E8961 /* YCUnused.m in Sources */ = {isa = PBXBuildFile; fileRef = 35859B822500B7EF008E8961 /* YCUnused.m */; };
+		35859B862500B8E9008E8961 /* YCUnused1.m in Sources */ = {isa = PBXBuildFile; fileRef = 35859B852500B8E9008E8961 /* YCUnused1.m */; };
+		35859B892500B8F5008E8961 /* YCUnused2.m in Sources */ = {isa = PBXBuildFile; fileRef = 35859B882500B8F5008E8961 /* YCUnused2.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -39,6 +42,12 @@
 /* Begin PBXFileReference section */
 		22D05EC661DF1EE8C6E3D918 /* Pods-FindUnusedClasses_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindUnusedClasses_Example.release.xcconfig"; path = "Target Support Files/Pods-FindUnusedClasses_Example/Pods-FindUnusedClasses_Example.release.xcconfig"; sourceTree = "<group>"; };
 		341AD48D389933B9D5AE71E0 /* Pods-FindUnusedClasses_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindUnusedClasses_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FindUnusedClasses_Tests/Pods-FindUnusedClasses_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		35859B812500B7EF008E8961 /* YCUnused.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCUnused.h; sourceTree = "<group>"; };
+		35859B822500B7EF008E8961 /* YCUnused.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCUnused.m; sourceTree = "<group>"; };
+		35859B842500B8E9008E8961 /* YCUnused1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCUnused1.h; sourceTree = "<group>"; };
+		35859B852500B8E9008E8961 /* YCUnused1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCUnused1.m; sourceTree = "<group>"; };
+		35859B872500B8F5008E8961 /* YCUnused2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCUnused2.h; sourceTree = "<group>"; };
+		35859B882500B8F5008E8961 /* YCUnused2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YCUnused2.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* FindUnusedClasses_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FindUnusedClasses_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -140,6 +149,12 @@
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
+				35859B812500B7EF008E8961 /* YCUnused.h */,
+				35859B822500B7EF008E8961 /* YCUnused.m */,
+				35859B842500B8E9008E8961 /* YCUnused1.h */,
+				35859B852500B8E9008E8961 /* YCUnused1.m */,
+				35859B872500B8F5008E8961 /* YCUnused2.h */,
+				35859B882500B8F5008E8961 /* YCUnused2.m */,
 			);
 			name = "Example for FindUnusedClasses";
 			path = FindUnusedClasses;
@@ -369,7 +384,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* YCAppDelegate.m in Sources */,
+				35859B832500B7EF008E8961 /* YCUnused.m in Sources */,
+				35859B862500B8E9008E8961 /* YCUnused1.m in Sources */,
 				6003F5A7195388D20070C39A /* YCViewController.m in Sources */,
+				35859B892500B8F5008E8961 /* YCUnused2.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +520,7 @@
 				GCC_PREFIX_HEADER = "FindUnusedClasses/FindUnusedClasses-Prefix.pch";
 				INFOPLIST_FILE = "FindUnusedClasses/FindUnusedClasses-Info.plist";
 				MODULE_NAME = ExampleApp;
+				OTHER_CFLAGS = "-fsanitize-coverage=func,trace-pc-guard";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -518,6 +537,7 @@
 				GCC_PREFIX_HEADER = "FindUnusedClasses/FindUnusedClasses-Prefix.pch";
 				INFOPLIST_FILE = "FindUnusedClasses/FindUnusedClasses-Info.plist";
 				MODULE_NAME = ExampleApp;
+				OTHER_CFLAGS = "-fsanitize-coverage=func,trace-pc-guard";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
