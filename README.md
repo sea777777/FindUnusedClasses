@@ -18,7 +18,8 @@ FindUnusedClasses is available through [CocoaPods](https://cocoapods.org). To in
 it, simply add the following line to your Podfile:
 
 ```ruby
-pod 'FindUnusedClasses'
+pod 'FindUnusedClasses' ,:git => 'https://github.com/sea777777/FindUnusedClasses.git'
+
 ```
 
 ## Author
