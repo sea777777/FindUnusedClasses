@@ -8,6 +8,9 @@
 
 ## Example
 
+✅ 支持查找 Object-C 无用类
+❎ 支持查找 Swift 无用类（待更新）
+❎ 支持查找 C++ 无用类 （待更新）
 
 注意：`Build Settings` 选择 `Other C Flags`  添加配置选项：`-fsanitize-coverage=func,trace-pc-guard`
 
@@ -23,7 +26,10 @@
 ```
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-    [FindUnusedClasses allUnusedClasses:[self class]];
+    //耗时操作，尽量放在子线程
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [FindUnusedClasses allUnusedClasses:[self class]];
+    });
 }
 ```
 
@@ -46,7 +52,10 @@ YCUnused
     
     [[YCUnused2 new] doSomething];
     
-    [FindUnusedClasses allUnusedClasses:[self class]];
+    //耗时操作，尽量放在子线程
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [FindUnusedClasses allUnusedClasses:[self class]];
+    });
 }
 ```
 

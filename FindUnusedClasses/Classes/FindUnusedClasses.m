@@ -37,13 +37,14 @@ typedef struct {
     numClasses = objc_getClassList(NULL, 0);
     NSMutableArray *classArr = [NSMutableArray new];
 
+    struct dl_info dlInfo;
+     
+    //利用 dlInfo 存放一个自定义类（notSystemClass）的路径
+    dladdr((__bridge void *)notSystemClass, &dlInfo);
+    const char *userLibraryPath = dlInfo.dli_fname;
+    
     if (numClasses > 0 )
     {
-        struct dl_info dlInfo;
-         
-        //利用 dlInfo 存放一个自定义类（notSystemClass）的路径
-        dladdr((__bridge void *)notSystemClass, &dlInfo);
-         
         //重新分配空间
         classes = (Class *)realloc(classes, sizeof(Class) * numClasses);
        
@@ -56,7 +57,7 @@ typedef struct {
             struct dl_info currentClassInfo = {0};
             dladdr((__bridge void *)cls, &currentClassInfo);
             
-            if (currentClassInfo.dli_fname != NULL && dlInfo.dli_fname == currentClassInfo.dli_fname) {
+            if (currentClassInfo.dli_fname != NULL && userLibraryPath == currentClassInfo.dli_fname) {
                 NSString *clsName = NSStringFromClass(cls);
                 clsName = [clsName stringByReplacingOccurrencesOfString:@"PodsDummy_" withString:@""];
                 [classArr addObject:clsName];
@@ -100,7 +101,6 @@ void __sanitizer_cov_trace_pc_guard(uint32_t *guard) {
     if (!notSystemClass) return nil;
     
     collectFinished = YES;
-    __sync_synchronize();
     
     NSMutableArray <NSString *> *calledClasses = [NSMutableArray array];
     while (YES) {

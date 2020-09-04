@@ -28,7 +28,11 @@
     
     [[YCUnused2 new] doSomething];
     
-    [FindUnusedClasses allUnusedClasses:[self class]];
+    
+    //耗时操作，尽量放在子线程
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        [FindUnusedClasses allUnusedClasses:[self class]];
+    });
     
     
 }
