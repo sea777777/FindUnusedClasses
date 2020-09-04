@@ -8,16 +8,16 @@
 
 ## Example
 
-✅ 支持查找 Object-C 无用类
-❎ 支持查找 Swift 无用类（待更新）
-❎ 支持查找 C++ 无用类 （待更新）
+✅ 支持查找 Object-C 无用类   
+❎ 支持查找 Swift 无用类（待更新）   
+❎ 支持查找 C++ 无用类 （待更新）   
 
 注意：`Build Settings` 选择 `Other C Flags`  添加配置选项：`-fsanitize-coverage=func,trace-pc-guard`
 
-在任意主线程，调用 `FindUnusedClasses allUnusedClasses` 即可， 参数是任意自定义类，只要不是系统类即可；
+在任意主线程，调用 `FindUnusedClasses allUnusedClasses` 即可， 参数是任意自定义类，只要不是系统类即可；   
 
 
-原理：利用编译器在每个方法调用处进行插桩，然后记录次函数指针，最后利用`dladdr`解析函数指针的具体信息，拿到类名称，也就是被执行的类。最后再拿到所有类对象列表，取差集即可，剩下的就是无用类，暂时只支持 objc，swift 后续会支持。
+原理：利用编译器在每个方法调用处进行插桩，然后记录次函数指针，最后利用`dladdr`解析函数指针的具体信息，拿到类名称，也就是被执行的类。最后再拿到所有类对象列表，取差集即可，剩下的就是无用类，暂时只支持 objc，swift 后续会支持。   
 
 
 
@@ -65,7 +65,7 @@ YCUnused1,
 YCUnused
 ```
 
-最后对比 例1 和 例2 的打印结果：在 `[[YCUnused2 new] doSomething];` 之后执行 `[FindUnusedClasses allUnusedClasses:[self class]];` 就不会认为 `YCUnused2` 是无用类。
+最后对比 例1 和 例2 的打印结果：在 `[[YCUnused2 new] doSomething];` 之后执行 `[FindUnusedClasses allUnusedClasses:[self class]];` 就不会认为 `YCUnused2` 是无用类。   
 
 建议：在程序运行10-15分钟后再调用 `FindUnusedClasses allUnusedClasses ` 。
 
