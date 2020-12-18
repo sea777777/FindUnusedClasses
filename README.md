@@ -96,3 +96,5 @@ FindUnusedClasses is available under the MIT license. See the LICENSE file for m
 
 test git 1 .
 
+
+test git 2 .
